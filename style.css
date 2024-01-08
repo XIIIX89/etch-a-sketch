@@ -4,14 +4,21 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h1 {
+    margin: 0px;
 }
 
 #mainBox {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    border: 1px solid black; 
+    border-radius: 6px;
+    margin: 10px 0 0 0;
 }
 
 
@@ -23,9 +30,31 @@ body {
 .boxDiv {
     min-width: 20px;
     min-height: 20px;
-    border: 1px solid black;
+    background-color: eggshell;
+    /* border: 1px solid black; */
 }
 
 .marked {
     background-color: black;
+}
+
+#inputsBox {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+.buttons {
+    background-color: seagreen;
+    max-width: 50px;
+    min-width: 50px;
+    max-height: 50px;
+    min-height: 50px;
+}
+
+#resSize {
+    display: flex;
+    background-color: grey;
+    max-height: 10px;
 }
