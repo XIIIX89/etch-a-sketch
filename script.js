@@ -29,7 +29,7 @@ mainBox.addEventListener('mouseover', (e) => {
 });
 
 // creates the flexbox row divs that contain the smaller boxes
-function createRows(dimensions, resSize) {
+function createRows(dimensions, resSize) { //resSize is passed to this function as resSize.value
     for (let i = 0; i <= dimensions; i++) {
         const rowDiv = document.createElement('div');
         mainBox.append(rowDiv);
