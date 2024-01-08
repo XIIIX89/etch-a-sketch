@@ -49,8 +49,8 @@ h1 {
 .buttons {
     margin: 5px;
     background-color: seagreen;
-    max-width: 50px;
-    min-width: 50px;
+    max-width: 100px;
+    min-width: 100px;
     max-height: 50px;
     min-height: 50px;
 }
@@ -68,4 +68,8 @@ h1 {
     min-height: 15px;
     max-width: 30px;
     max-height: 15px;
+}
+
+#newGridBtn {
+    font-size: 20px;
 }

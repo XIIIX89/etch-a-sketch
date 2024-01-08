@@ -6,6 +6,7 @@ let resSize = body.querySelector('#resSize');
 
 
 inputsBox.addEventListener('click', (e) => {
+    rowNumber = 0;
     let target = e.target.id;
     switch(target) {
         case 'newGridBtn': 
