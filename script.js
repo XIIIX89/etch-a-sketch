@@ -26,7 +26,18 @@ inputsBox.addEventListener('click', (e) => {
 
 mainBox.addEventListener('mouseover', (e) => {
     let target = e.target;
-    target.classList.add('marked');
+
+     //This code will turn the background black
+    //target.classList.add('marked');
+    
+
+    // generate random whole numbers for RGB between 0 and 255
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+    // no idea why this need the sizes set, but it works like this. Makes the border disappear when cursor exits the grid so I had to put it back in below. I'm sure this isn't optimal
+    target.style = `background-color: rgb(${red}, ${green}, ${blue}); min-width: ${resSize.value}px; min-height: ${resSize.value}px;`;
+    mainBox.style = 'border: 4px solid black;'
 });
 
 // creates the flexbox row divs that contain the smaller boxes
